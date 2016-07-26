@@ -2,18 +2,6 @@
   "name": "PreSS.js",
   "version": "0.0.1",
   "description": "A JS preprocessor for CSS",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha -R landing",
-    "start": "node lib/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/johannhospice/press.js.git"
-  },
   "keywords": [
     "js",
     "css",
@@ -24,10 +12,25 @@
   ],
   "author": "Johann Hospice <johannhospice.dev@gmail.com> (https://johannhospice.github.io/)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/johannhospice/press.js/issues"
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "lib": "lib",
+    "bin": "bin"
   },
-  "bin": { "press": "./bin/style" },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johannhospice/PreSS.js.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R landing",
+  },
+  "bin": { 
+    "press": "./bin/press" 
+  },
+  "bugs": {
+    "url": "https://github.com/johannhospice/PreSS.js/issues"
+  },
   "devDependencies": {
     "mocha": "^2.5.3"
   }
