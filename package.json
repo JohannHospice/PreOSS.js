@@ -10,23 +10,29 @@
     "web",
     "development"
   ],
-  "author": "Johann Hospice <johannhospice.dev@gmail.com> (https://johannhospice.github.io/)",
+  "author": {
+    "name": "Johann Hospice",
+    "email": "johannhospice.dev@gmail.com",
+    "url": "https://johannhospice.github.io/"
+  },
   "license": "ISC",
+  "testFileExtensions": [
+    "js"
+  ],
   "main": "index.js",
-  "directories": {
-    "test": "test",
-    "lib": "lib",
-    "bin": "bin"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/johannhospice/PreSS.js.git"
-  },
   "scripts": {
-    "test": "./node_modules/.bin/mocha -R landing",
+    "start": "./bin/press",
+    "test": "./node_modules/.bin/mocha -R landing"
   },
   "bin": { 
     "press": "./bin/press" 
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/johannhospice/PreSS.js.git"
   },
   "bugs": {
     "url": "https://github.com/johannhospice/PreSS.js/issues"
