@@ -21,11 +21,11 @@
   ],
   "main": "index.js",
   "scripts": {
-    "start": "./bin/press",
+    "start": "./bin/index",
     "test": "./node_modules/.bin/mocha -R landing"
   },
   "bin": { 
-    "press": "./bin/press" 
+    "press": "./bin/index" 
   },
   "directories": {
     "test": "test"
