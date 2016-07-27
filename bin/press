@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+'use strict';
+
+// only one case now
+// press <source> <destination>
+
+var preprocessor = require('../lib/preprocessor'),
+	args = process.argv.slice(2);
+
+if(args.lenght==2)
+	preprocessor.exec(args[0], args[1]);
+else
+	console.error('error: need 2 arguments');
