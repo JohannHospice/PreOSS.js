@@ -8,7 +8,7 @@ describe('Rule', function(){
 	it('should build a correctly');
 	it('should have a good toString result', function (done) {
 		let rule = new Rule(vars.cssClassName);
-		assert.equal(vars.cssClassName, rule.toString);
+		assert.equal(rule.toString(), vars.cssClassName);
 		done();
 	});
 })
