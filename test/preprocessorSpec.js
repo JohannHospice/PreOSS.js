@@ -3,7 +3,7 @@ var assert = require('assert'),
 	vars = require('./vars')
 
 describe('Preprocess', function () {
-	it('should exec', function (done) {
+	it.skip('should exec', function (done) {
 		preprocessor.exec(vars.filepathExist,'example/test', done)
 	})
 })
