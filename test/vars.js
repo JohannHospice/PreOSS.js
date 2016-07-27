@@ -1,4 +1,5 @@
 module.exports = {
 	filepathExist: 'example/styles.js',
-	filepathNotExist: '/'
+	filepathNotExist: '/',
+	cssClassName: '.nav::after:hover'
 }
