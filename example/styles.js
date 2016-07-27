@@ -1,5 +1,9 @@
-var noir = '#000'
+var noir = '#000';
+
 module.exports = {
+	'@font-face': {
+		src: 'url(../font.ttf)'
+	},
 	body: {
 		margin: 0
 	},
@@ -20,34 +24,3 @@ module.exports = {
 		content:''
 	}
 }
-
-/*
-//result
-
-body {
-	margin: 0
-}
-.link {
-	background-color: #000,
-	height: 12
-}
-.nested {
-	color: #333
-}
-.nested > a {
-	color: red
-}
-.nested > a:hover {
-	opacity: transparent
-}
-a::after {
-	content: ''
-}
-*/
-
-/*
-['.','#','']element {
-	attribute: string,
-	['>','+','~','']element: {} 
-}
-*/
