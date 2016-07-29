@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var vars = require('./vars'),
 	assert = require('assert'),
@@ -22,7 +22,7 @@ describe('CSSparser', function(){
 			done();
 		});
 		it('should have a good beauty toString', function (done) {
-			assert.equal(declaration.toStringBeauty(), 'background: #000');
+			assert.equal(declaration.toStringBeautify(), 'background: #000');
 			done();
 		});
 	})
@@ -37,7 +37,7 @@ describe('CSSparser', function(){
 			done();
 		});
 		it('should have a good beauty toString', function (done) {
-			assert.equal(rule.toStringBeauty(), ".nav {\n\tbackground-color: red;\n\tposition: absolute\n}");
+			assert.equal(rule.toStringBeautify(), ".nav {\n\tbackground-color: red;\n\tposition: absolute\n}");
 			done();
 		});
 	})
