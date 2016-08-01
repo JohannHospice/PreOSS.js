@@ -6,9 +6,7 @@
     "js",
     "css",
     "preprocessor",
-    "style",
-    "web",
-    "development"
+    "style"
   ],
   "author": {
     "name": "Johann Hospice",
@@ -19,16 +17,18 @@
   "testFileExtensions": [
     "js"
   ],
-  "main": "index.js",
   "scripts": {
-    "start": "./bin/index",
-    "test": "./node_modules/.bin/mocha -R landing"
+    "test": "mocha",
+    "start": "node bin/index.js"
   },
   "bin": { 
-    "press": "./bin/index" 
+    "press": "node bin/index.js"
   },
   "directories": {
-    "test": "test"
+    "bin": "bin",
+    "lib": "lib",
+    "test": "test",
+    "example": "example"
   },
   "repository": {
     "type": "git",
