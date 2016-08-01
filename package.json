@@ -19,10 +19,10 @@
   ],
   "scripts": {
     "test": "mocha",
-    "start": "node bin/index.js"
+    "start": "./bin/index.js"
   },
   "bin": { 
-    "press": "node bin/index.js"
+    "press": "./bin/index.js"
   },
   "directories": {
     "bin": "bin",
