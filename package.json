@@ -13,7 +13,7 @@
     "email": "johannhospice.dev@gmail.com",
     "url": "https://johannhospice.github.io/"
   },
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "testFileExtensions": [
     "js"
   ],
