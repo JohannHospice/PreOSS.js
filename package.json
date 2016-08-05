@@ -21,7 +21,7 @@
     "test": "mocha",
     "start": "./bin/index.js"
   },
-  "bin": { 
+  "bin": {
     "press": "./bin/index.js"
   },
   "directories": {
@@ -39,5 +39,8 @@
   },
   "devDependencies": {
     "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "require-reload": "^0.2.2"
   }
 }
