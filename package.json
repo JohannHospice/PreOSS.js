@@ -1,5 +1,5 @@
 {
-  "name": "PreSS.js",
+  "name": "PreOSS.js",
   "version": "0.0.1",
   "description": "A JS preprocessor for CSS",
   "keywords": [
@@ -22,7 +22,7 @@
     "start": "./bin/index.js"
   },
   "bin": {
-    "press": "./bin/index.js"
+    "preoss": "./bin/index.js"
   },
   "directories": {
     "bin": "bin",
@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/johannhospice/PreSS.js.git"
+    "url": "git+ssh://git@github.com/johannhospice/PreOSS.js.git"
   },
   "bugs": {
-    "url": "https://github.com/johannhospice/PreSS.js/issues"
+    "url": "https://github.com/johannhospice/PreOSS.js/issues"
   },
   "devDependencies": {
     "mocha": "^2.5.3"

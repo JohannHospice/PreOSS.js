@@ -1,4 +1,4 @@
-# PreSS.js
+# PreOSS.js
 [![Travis](https://api.travis-ci.org/JohannHospice/PreSS.js.svg?branch=dev)](https://travis-ci.org/JohannHospice/PreSS.js)
 
 ## Prerequisites
@@ -7,12 +7,12 @@
 ## Installing
 Soon available on npm via:
 ```bash
-npm install -g pressjs
+npm install -g preoss
 ```
 
 ## Usage
 ```bash
-press <option> <source_file> <destination_file>
+preoss <option> <source_file> <destination_file>
 ```
 
 ## License
