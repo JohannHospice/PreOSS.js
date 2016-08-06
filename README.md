@@ -20,10 +20,7 @@ A JS preprocessor for CSS
 * others (soon explain)
 
 ## Work
-Work based on CSS [documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors)
-Work inspired by:
-* [Lessjs](http://lesscss.org/)
-* [Sass](http://sass-lang.com/)
+Work based on CSS [documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors) and inspired by [Lessjs](http://lesscss.org/) and [Sass](http://sass-lang.com/)
  
 ## Installation
 ```bash
@@ -33,8 +30,6 @@ $ npm install -g preoss
 ```bash
 $ preoss <option> <input_file> <output_file>
 ```
-### Options
-
 Options|Descriptions
 :-:|:-:
 -h, --help|output usage information
