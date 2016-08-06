@@ -1,5 +1,6 @@
 # PreOSS.js
-[![Travis](https://api.travis-ci.org/JohannHospice/PreSS.js.svg?branch=dev)](https://travis-ci.org/JohannHospice/PreSS.js)
+[![Travis branch](https://img.shields.io/travis/JohannHospice/PreOSS.js.svg?style=flat-square)](https://travis-ci.org/JohannHospice/PreOSS.js)
+[![npm](https://img.shields.io/npm/l/preoss.svg?style=flat-square)](http://spdx.org/licenses/BSD-3-Clause)
 
 ## Introduction
 soon
