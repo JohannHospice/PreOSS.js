@@ -75,10 +75,10 @@ function printVersion() {
 
 function printUsage() {
     console.log([
-        "Usage: preoss <options> <source_file> <destination_file>\n",
-        'Options:'
-    ].concat(Object.keys(documentedCommands)
-        .map(name => `\t${name}\t\t${documentedCommands[name]}`))
+        'Usage: preoss <options> <input_file> <output_file>\n',
+        'Description: Compile JS file to CSS.\n',
+        'Options:',
+    ].concat(Object.keys(documentedCommands).map(name => `\t${name}\t\t${documentedCommands[name]}`))
         .join('\n'));
     process.exit(1);
 }
