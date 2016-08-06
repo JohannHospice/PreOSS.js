@@ -2,11 +2,28 @@
 [![Travis branch](https://img.shields.io/travis/JohannHospice/PreOSS.js.svg?style=flat-square)](https://travis-ci.org/JohannHospice/PreOSS.js)
 [![npm](https://img.shields.io/npm/l/preoss.svg?style=flat-square)](http://spdx.org/licenses/BSD-3-Clause)
 
-## Introduction
-soon
+A JS preprocessor for CSS 
 
 ## Features
-soon
+* Minify or beautify output files 
+* Support multiples CSS selectors:
+	* basics: ID, class and type
+	* pseudo-elements
+	* pseudo-classes
+* Live preprossessing (hot-reload)
+
+## To do
+* Add selectors
+	* basics: universal and attribute
+	* combinators 
+* convert a css file to a js file
+* others (soon explain)
+
+## Work
+Work based on CSS [documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors)
+Work inspired by:
+* [Lessjs](http://lesscss.org/)
+* [Sass](http://sass-lang.com/)
  
 ## Installation
 ```bash
@@ -20,7 +37,7 @@ $ preoss <option> <input_file> <output_file>
 
 Options|Descriptions
 :-:|:-:
--h, --help|output usage information|
+-h, --help|output usage information
 -v, --version|output the version number
 -m, --minify|minify the CSS output
 -b, --beautify|beautify the CSS output
