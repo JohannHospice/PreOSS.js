@@ -1,0 +1,27 @@
+@font-face {
+	src: url('../font/font.ttf')
+}
+body {
+	margin: 0;
+	padding: 15px
+}
+#link {
+	background-color: #424242;
+	height: 256px;
+	width: auto
+}
+.nested {
+	color: #333
+}
+a {
+	color: red
+}
+a:hover {
+	text-align: center;
+	opacity: 0
+}
+a::after {
+	content: '';
+	position: absolute;
+	top: 0
+}

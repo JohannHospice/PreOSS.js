@@ -1,0 +1,45 @@
+{
+  "name": "preoss",
+  "version": "1.0.0",
+  "description": "A JS preprocessor for CSS",
+  "keywords": [
+    "js",
+    "css",
+    "preprocessor",
+    "style"
+  ],
+  "author": {
+    "name": "Johann Hospice",
+    "email": "johannhospice.dev@gmail.com",
+    "url": "https://johannhospice.github.io/"
+  },
+  "license": "BSD-3-Clause",
+  "testFileExtensions": [
+    "js"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "preoss": "./bin/index.js"
+  },
+  "directories": {
+    "bin": "bin",
+    "lib": "lib",
+    "test": "test",
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/johannhospice/PreOSS.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johannhospice/PreOSS.js/issues"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "require-reload": "^0.2.2"
+  }
+}
