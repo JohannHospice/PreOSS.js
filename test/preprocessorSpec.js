@@ -1,9 +1,5 @@
 var assert = require('assert'),
-	preprocessor = require('../lib/preprocessor'),
-	vars = require('./vars')
+	preprocessor = require('../lib/preprocessor');
 
 describe('Preprocess', function () {
-	it.skip('should exec', function (done) {
-		preprocessor.exec(vars.filepathExist,'example/test', done)
-	})
 })

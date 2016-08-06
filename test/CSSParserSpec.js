@@ -1,7 +1,6 @@
 'use strict';
 
-var vars = require('./vars'),
-	assert = require('assert'),
+var assert = require('assert'),
 	Rule = require('../lib/class/Rule'),
 	Selector = require('../lib/class/Selector'),
 	Declaration = require('../lib/class/Declaration');

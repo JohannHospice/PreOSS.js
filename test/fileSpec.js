@@ -1,17 +1,16 @@
 'use_strict'
 
 var assert = require('assert'),
-	file = require('../lib/file'),
-	vars = require('./vars.js');
+	file = require('../lib/file');
 
 describe('File', function(){
 
 	it('should exist', function (done) {
-		file.exist(vars.filepathExist, done);
+		file.exist('example/styles.js', done);
 	});
 
 	it('should be read', function (done) {		
-		file.read(vars.filepathExist, done);
+		file.read('example/styles.js', done);
 	});
 
 	it('should be writen', function (done){
@@ -19,6 +18,6 @@ describe('File', function(){
 	});
 	
 	it.skip('should be watched', function (done) {
-		file.watch(vars.filepathNotExist, done);
+		file.watch('/', done);
 	});
 })
