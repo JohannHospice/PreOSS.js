@@ -6,9 +6,9 @@ describe('command', function () {
     it('should be parse correctly', function (done) {
         command.parse(
         	['node', './../index', '--watch', 'styles/js/index.js', 'styles/css/styles.css'],
-        	function (err, options, files) {
+        	function (err, options, others) {
 		        assert.deepEqual(options, ['--watch']);
-		        assert.deepEqual(files, ['./styles/js/index.js', './styles/css/styles.css']);
+		        assert.deepEqual(others, ['styles/js/index.js', 'styles/css/styles.css']);
 		        done()
 		    }
 	    );
