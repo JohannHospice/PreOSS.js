@@ -18,8 +18,7 @@
     "js"
   ],
   "scripts": {
-    "test": "mocha",
-    "start": "./bin/index.js"
+    "test": "mocha"
   },
   "bin": {
     "preoss": "./bin/index.js"
