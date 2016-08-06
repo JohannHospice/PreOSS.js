@@ -32,6 +32,7 @@ command.parse(process.argv, function (err, options, others) {
             case '--reverse':
             case '-r':
                 config.reverse = true;
+                printNotImplemented();
                 break;
             case '-v':
             case '--version':
@@ -48,7 +49,7 @@ command.parse(process.argv, function (err, options, others) {
 
     if (paths.length != 2)
         printNeedArgs();
-
+    
     preprocessor.exec(paths[0], paths[1], config);
 });
 
@@ -59,6 +60,11 @@ function printNeedArgs() {
 
 function printUnknowCommand() {
     console.error('Unknow command\nUse: press --help');
+    process.exit(1);
+}
+
+function printNotImplemented(argument) {
+    console.error('Function not yet implemented.');
     process.exit(1);
 }
 
