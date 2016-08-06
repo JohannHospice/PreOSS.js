@@ -54,12 +54,12 @@ command.parse(process.argv, function (err, options, others) {
 });
 
 function printNeedArgs() {
-    console.error('Need 2 arguments\nUse: press --help');
+    console.error('Need 2 arguments\nUse: preoss --help');
     process.exit(1);
 }
 
 function printUnknowCommand() {
-    console.error('Unknow command\nUse: press --help');
+    console.error('Unknow command\nUse: preoss --help');
     process.exit(1);
 }
 
@@ -75,8 +75,10 @@ function printVersion() {
 
 function printUsage() {
     console.log([
-        "Usage: press <options> <source_file> <destination_file>\n",
+        "Usage: preoss <options> <source_file> <destination_file>\n",
         'Options:'
-    ].concat(Object.keys(documentedCommands).map((name) => `   ${name}   \t${documentedCommands[name]}`)).join('\n'));
+    ].concat(Object.keys(documentedCommands)
+        .map(name => `\t${name}\t\t${documentedCommands[name]}`))
+        .join('\n'));
     process.exit(1);
 }
