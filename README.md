@@ -20,7 +20,7 @@ A JS preprocessor for CSS
 * others (soon explain)
 
 ## Work
-Work based on CSS [documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors) and inspired by [Lessjs](http://lesscss.org/) and [Sass](http://sass-lang.com/)
+Work based on CSS [documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors) and inspired by [Less](http://lesscss.org/) and [Sass](http://sass-lang.com/)
  
 ## Installation
 ```bash
@@ -57,7 +57,6 @@ var colors = {
 
 module.exports = {
     '@font-face': {
-
         src: "url('../font/font.ttf')"
     },
     body: {
