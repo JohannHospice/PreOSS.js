@@ -7,23 +7,103 @@ soon
 
 ## Features
 soon
-
+ 
 ## Installation
 ```bash
 $ npm install -g preoss
 ```
-### Prerequisites
-* Have `node` >= v4.0.0 installed and `npm` >= 2.0.0  
-
 ## Usage
 ```bash
-$ preoss <option> <source_file> <destination_file>
+$ preoss <option> <input_file> <output_file>
 ```
 ### Options
-soon
 
-## Examples
-soon
+Options|Descriptions
+:-:|:-:
+-h, --help|output usage information|
+-v, --version|output the version number
+-m, --minify|minify the CSS output
+-b, --beautify|beautify the CSS output
+-w, --watch|watch file for changes
+-r, --reverse|compile CSS to JS file
+
+## Example
+Use the simple command:
+```bash
+$ preoss styles.js styles.css
+```
+will compile your javascript source file:
+```javascript
+var colors = {
+        grey:[
+            '#212121',
+            '#424242',
+            '#717171',
+        ]
+    },
+    pow2 = val => Math.pow(2, val);
+
+module.exports = {
+    '@font-face': {
+
+        src: "url('../font/font.ttf')"
+    },
+    body: {
+        margin: 0,
+        padding: 15+'px'
+    },
+    '#link': {
+        'background-color': colors.grey[1],
+        height: `${pow2(8)}px`,
+        width: 'auto',
+    },
+    '.nested': {
+        color: '#333',
+    },
+    a: {
+        color: 'red'
+    },
+    'a:hover': {
+        'text-align': 'center',
+        opacity: '0'
+    },
+    'a::after': {
+        content: "''",
+        position: 'absolute',
+        top: 0
+    }
+}
+```
+to produce your css file:
+```css
+@font-face {
+	src: url('../font/font.ttf')
+}
+body {
+	margin: 0;
+	padding: 15px
+}
+#link {
+	background-color: #424242;
+	height: 256px;
+	width: auto
+}
+.nested {
+	color: #333
+}
+a {
+	color: red
+}
+a:hover {
+	text-align: center;
+	opacity: 0
+}
+a::after {
+	content: '';
+	position: absolute;
+	top: 0
+}
+```
 
 ## Tests
 ```bash
