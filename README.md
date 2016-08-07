@@ -5,7 +5,7 @@
 [![Travis branch](https://img.shields.io/travis/JohannHospice/PreOSS.js.svg?style=flat-square)](https://travis-ci.org/JohannHospice/PreOSS.js)
 [![npm](https://img.shields.io/npm/dt/preoss.svg?style=flat-square)](https://www.npmjs.com/package/preoss)
 
-A JS preprocessor for CSS 
+Develop a CSS stylesheet with the pleasure of program in Js.
 
 ## Features
 
@@ -33,13 +33,13 @@ Inspired by [Less](http://lesscss.org/), [Sass](http://sass-lang.com/) and [Reac
 ## Installation
 
 ```bash
-$ npm install -g preoss
+npm install -g preoss
 ```
 
 ## Tests
 
 ```bash
-$ npm test
+npm test
 ```
 
 ## Usage
@@ -61,7 +61,7 @@ Options|Descriptions
 Use the simple command:
 
 ```bash
-$ preoss styles.js styles.css
+preoss styles.js styles.css
 ```
 
 will compile your javascript source file:
