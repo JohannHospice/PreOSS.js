@@ -1,17 +1,21 @@
 # PreOSS.js
+
 [![Travis branch](https://img.shields.io/travis/JohannHospice/PreOSS.js.svg?style=flat-square)](https://travis-ci.org/JohannHospice/PreOSS.js)
 [![npm](https://img.shields.io/npm/l/preoss.svg?style=flat-square)](http://spdx.org/licenses/BSD-3-Clause)
+
 A JS preprocessor for CSS 
 
 ## Features
-* Minify or beautify output files 
+
 * Support multiples CSS selectors:
-	* basics: ID, class and type
-	* pseudo-elements
-	* pseudo-classes
+    * basics: ID, class and type
+    * pseudo-elements
+    * pseudo-classes
+* Minify or beautify output files 
 * Live preprossessing (hot-reloading)
 
 ## To do
+
 * Add selectors
 	* basics: universal and attribute
 	* combinators 
@@ -19,15 +23,25 @@ A JS preprocessor for CSS
 * others (soon explain)
 
 ## Work
+
 Based on [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors) 
+
 Inspired by [Less](http://lesscss.org/), [Sass](http://sass-lang.com/) and [React-native](http://facebook.github.io/react-native/)
  
 ## Installation
+
 ```bash
 $ npm install -g preoss
 ```
 
+## Tests
+
+```bash
+$ npm test
+```
+
 ## Usage
+
 ```bash
 $ preoss <option> <input_file> <output_file>
 ```
@@ -40,17 +54,16 @@ Options|Descriptions
 -w, --watch|watch file for changes
 -r, --reverse|compile CSS to JS file
 
-## Tests
-```bash
-$ npm test
-```
-
 ## Example
+
 Use the simple command:
+
 ```bash
 $ preoss styles.js styles.css
 ```
+
 will compile your javascript source file:
+
 ```javascript
 var colors = {
         grey: [
@@ -91,7 +104,9 @@ module.exports = {
     }
 }
 ```
-to produce your css file:
+
+to produce the css file:
+
 ```css
 @font-face {
 	src: url('../font/font.ttf')
@@ -123,4 +138,5 @@ a::after {
 ```
 
 ## License
+
 Copyright 2016 Johann Hospice. Licensed under [BDS 3 licensed](./LICENSE.txt)
