@@ -1,7 +1,9 @@
 # PreOSS.js
 
-[![Travis branch](https://img.shields.io/travis/JohannHospice/PreOSS.js.svg?style=flat-square)](https://travis-ci.org/JohannHospice/PreOSS.js)
 [![npm](https://img.shields.io/npm/l/preoss.svg?style=flat-square)](http://spdx.org/licenses/BSD-3-Clause)
+[![npm](https://img.shields.io/npm/v/preoss.svg?style=flat-square)](https://www.npmjs.com/package/preoss)
+[![Travis branch](https://img.shields.io/travis/JohannHospice/PreOSS.js.svg?style=flat-square)](https://travis-ci.org/JohannHospice/PreOSS.js)
+[![npm](https://img.shields.io/npm/dt/preoss.svg?style=flat-square)](https://www.npmjs.com/package/preoss)
 
 A JS preprocessor for CSS 
 
