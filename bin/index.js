@@ -3,10 +3,10 @@
 'use strict';
 
 let preprocessor = require('../lib/preprocessor'),
-    command = require('../lib/command'),
+    command = require('../lib/util/command'),
+    file = require('../lib/util/file'),
     documentedCommands = require('../lib/constants/documentedCommands'),
-    defaultConfig = require('../lib/constants/defaultConfig'),
-    file = require('../lib/file');
+    defaultConfig = require('../lib/constants/defaultConfig');
 
 command.parse(process.argv, function (err, options, others) {
     if (err)
