@@ -45,8 +45,9 @@ npm test
 ## Usage
 
 ```bash
-$ preoss <option> <input_file> <output_file>
+preoss <option> <input_file> <output_file>
 ```
+
 Options|Descriptions
 :-:|:-:
 -h, --help|output usage information
@@ -59,13 +60,11 @@ Options|Descriptions
 ## Example
 
 Use the simple command:
-
 ```bash
 preoss styles.js styles.css
 ```
 
 will compile your javascript source file:
-
 ```javascript
 var colors = {
         grey: [
@@ -108,7 +107,6 @@ module.exports = {
 ```
 
 to produce the css file:
-
 ```css
 @font-face {
 	src: url('../font/font.ttf')
