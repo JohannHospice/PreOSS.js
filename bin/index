@@ -1,0 +1,84 @@
+#!/usr/bin/env node
+'use strict';
+var constant = require('../lib/constants/');
+var preprocessor = require('../lib/preprocessor'),
+    command = require('../lib/util/command'),
+    file = require('../lib/util/file');
+
+command.parse(process.argv, function (err, options, others) {
+    if (err)
+        throw new Error(err);
+
+    let config = constant.defaultConfig,
+        paths = others.map(file => `./${file}`);
+
+    if (paths.length != 2)
+        printNeedArgs();
+
+    options.forEach(function (arg) {
+        switch (arg) {
+            case '-w':
+            case '--watch':
+                config.watch = true;
+                break;
+            case '-m':
+            case '--minify':
+                config.beautify = false;
+                break;
+            case '-b':
+            case '--beautify':
+                config.beautify = true;
+                break;
+            case '-r':
+            case '--reverse':
+                config.reverse = true;
+                printNotImplemented();
+                break;
+            case '-v':
+            case '--version':
+                printVersion();
+                break;
+            case '-h':
+            case '--help':
+                printUsage();
+                break;
+            default:
+                printUnknowCommand();
+        }
+    });
+
+    if (config.watch)
+        preprocessor.parseWatch(paths[0], paths[1], config.beautify);
+    else
+        preprocessor.parse(paths[0], paths[1], config.beautify);
+});
+
+function printNeedArgs() {
+    console.error('Need 2 arguments\nUse: preoss --help');
+    process.exit(1);
+}
+
+function printUnknowCommand() {
+    console.error('Unknow command\nUse: preoss --help');
+    process.exit(1);
+}
+
+function printNotImplemented() {
+    console.error('Function not yet implemented.');
+    process.exit(1);
+}
+
+function printVersion() {
+    console.log(JSON.parse(file.readSync(__dirname + '/../package.json')).version)
+    process.exit(1);
+}
+
+function printUsage() {
+    console.log([
+        'Usage: preoss <options> <input_file> <output_file>\n',
+        'Description: Compile JS file to CSS.\n',
+        'Options:',
+    ].concat(Object.keys(constant.documentedCommands).map(name => `\t${name}\t\t${constant.documentedCommands[name]}`))
+        .join('\n'));
+    process.exit(1);
+}

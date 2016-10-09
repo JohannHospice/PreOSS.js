@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert'),
-    command = require('../lib/command');
+    command = require('../lib/util/command');
 
 describe('command', function () {
     it('should be parse correctly', function (done) {

@@ -1,7 +1,7 @@
 'use_strict'
 
 var assert = require('assert'),
-	file = require('../lib/file');
+	file = require('../lib/util/file');
 
 describe('File', function(){
 
